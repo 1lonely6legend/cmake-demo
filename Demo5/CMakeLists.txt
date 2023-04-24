@@ -4,6 +4,7 @@ cmake_minimum_required (VERSION 2.8)
 # 项目信息
 project (Demo5)
 
+# 设置,引用当前源码路径下的所有头文件
 set (CMAKE_INCLUDE_CURRENT_DIR ON)
 
 # 加入一个配置头文件，用于处理 CMake 对源码的设置
@@ -31,7 +32,7 @@ aux_source_directory(. DIR_SRCS)
 add_executable(Demo ${DIR_SRCS})
 target_link_libraries (Demo  ${EXTRA_LIBS})
 
-# 指定安装路径
+# 指定MathFunctions库的安装路径
 install (TARGETS Demo DESTINATION bin)
 install (FILES "${PROJECT_BINARY_DIR}/config.h"
          DESTINATION include)

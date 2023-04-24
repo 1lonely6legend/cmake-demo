@@ -107,6 +107,8 @@ set(MY_VARIABLE "Hello, world!")
 
 ## configure_file()
 
+> 使用`configure_file()`函数替换变量值,所生成的文件会被放在CMake的构建目录中。在改变cmake的相应变量值后，需要删除CMake的构建目录，重新生成才能生效。
+
 `configure_file()`函数用于**将指定的源文件复制到指定的目标位置，并替换其中的变量值**。它的语法如下：
 
 ```cmake
