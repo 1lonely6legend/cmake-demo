@@ -20,6 +20,7 @@ option (USE_MYMATH
 # 会自动生成一个config.h文件
 # 可以通过h.in文件来设置一些变量,控制代码的编译
 # cmake根据h.in文件中的内容生成一个h文件
+# 需要重置缓存,这样才能刷新缓存中camke生成的.h文件
 configure_file (
   "${PROJECT_SOURCE_DIR}/config.h.in"
   "${PROJECT_BINARY_DIR}/config.h"
