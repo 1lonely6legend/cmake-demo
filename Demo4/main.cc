@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <config.h>
 
+//判断USE_MYMATH是否被定义为ON
 #ifdef USE_MYMATH
   #include <MathFunctions.h>
 #else
